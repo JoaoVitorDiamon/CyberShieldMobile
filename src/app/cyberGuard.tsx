@@ -314,7 +314,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   cardInner: {
-    padding: 20,
+    padding: 21,
     alignItems: "center",
   },
   questionText: {
