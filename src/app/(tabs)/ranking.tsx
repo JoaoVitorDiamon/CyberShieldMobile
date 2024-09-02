@@ -23,7 +23,7 @@ const CardTable = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://0efe-189-29-146-118.ngrok-free.app/Scores",
+          "https://b82a-189-29-146-118.ngrok-free.app/Scores",
           {
             method: "GET",
             headers: {
