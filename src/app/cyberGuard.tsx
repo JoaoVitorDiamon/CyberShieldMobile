@@ -132,10 +132,10 @@ const Card = () => {
       }).start();
       translateY.setValue(0);
       setDragging(false);
-      setFeedback(""); // Clear feedback if not moved significantly
+      setFeedback("");
       setShowExplanation(false);
     } else {
-      // Update feedback immediately
+    
       const feedbackMessage = isCorrect
         ? currentQuestion.options.correta
         : currentQuestion.options.incorreta;
@@ -193,7 +193,7 @@ const Card = () => {
 
       const formattedTime = getTotalTime();
       const response = await axios.get(
-        `https://0efe-189-29-146-118.ngrok-free.app/Scores/attScores/user=${storedUsername};score=${points};horaPontuacao=${formattedTime}`,
+        `https://b8a2-189-29-146-118.ngrok-free.app/Scores/attScores/user=${storedUsername};score=${points};horaPontuacao=${formattedTime}`,
         {
           headers: {
             "ngrok-skip-browser-warning": "true",
@@ -223,7 +223,7 @@ const Card = () => {
         <Text style={styles.finalMessage}>{messagePoint}</Text>
         <Text style={styles.finalText}>Você fez {points} pontos.</Text>
         <Text style={styles.finalText}>Tempo total: {getTotalTime()}</Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity onPress={() => router.replace("/(tabs)/ranking")}   style={styles.button}>
           <Text style={styles.buttonText}>Ver o Ranking Geral</Text>
         </TouchableOpacity>
         <TouchableOpacity
