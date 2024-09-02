@@ -20,7 +20,7 @@ export default function Register() {
 
   const handleRegisterSubmit = async () => {
     try {
-      const url = `https://0efe-189-29-146-118.ngrok-free.app/Users/cad/user=${username}&email=${email}&password=${senha}`;
+      const url = `https://b8a2-189-29-146-118.ngrok-free.app/Users/cad/user=${username}&email=${email}&password=${senha}`;
       const response = await axios.get(url, {
         headers: {
           'ngrok-skip-browser-warning': 'true'
