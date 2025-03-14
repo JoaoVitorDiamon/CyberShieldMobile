@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# App de Segurança na Internet
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Sobre o Projeto
 
-## Get started
+Este é um aplicativo educacional desenvolvido em **React Native** que ensina conceitos de segurança na internet de forma interativa e divertida. O app conta com dois mini-jogos para reforçar o aprendizado:
 
-1. Install dependencies
+1. **Quiz** - Teste seus conhecimentos respondendo perguntas sobre segurança digital.
+2. **Jogo estilo Reigns** - Tome decisões em cenários simulados e veja as consequências das suas escolhas na segurança online.
 
-   ```bash
+## Tecnologias Utilizadas
+- **React Native**
+- **Expo** 
+- **TypeScript** (para melhor tipagem e manutenção do código)
+- **Styled Components** (para estilização)
+
+## Funcionalidades
+- Interface intuitiva e acessível para todas as idades.
+- Perguntas variadas sobre temas como senhas seguras, phishing, privacidade e fake news.
+- Decisões interativas que simulam situações do dia a dia na internet.
+- Feedback educativo baseado nas respostas do usuário.
+
+## Como Executar o Projeto
+
+### Requisitos:
+- Node.js instalado
+- Expo CLI 
+- Emulador Android/iOS ou dispositivo físico
+
+### Passos:
+1. Clone este repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/nome-do-repo.git
+   ```
+2. Acesse a pasta do projeto:
+   ```sh
+   cd nome-do-repo
+   ```
+3. Instale as dependências:
+   ```sh
    npm install
+   # ou
+   yarn install
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+4. Execute o projeto:
+   ```sh
+   npx expo start
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   ou, caso não esteja usando Expo:
+   ```sh
+   npx react-native run-android # Para Android
+   npx react-native run-ios # Para iOS
+   ```
