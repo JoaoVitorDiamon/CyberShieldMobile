@@ -45,8 +45,3 @@ Este é um aplicativo educacional desenvolvido em **React Native** que ensina co
    ```sh
    npx expo start
    ```
-   ou, caso não esteja usando Expo:
-   ```sh
-   npx react-native run-android # Para Android
-   npx react-native run-ios # Para iOS
-   ```
